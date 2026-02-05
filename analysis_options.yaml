@@ -15,7 +15,7 @@ analyzer:
   plugins:
     - custom_lint
   exclude:
-    - "**/*.g.dart "
+    - "**/*.g.dart"
 
 formatter:
   trailing_commas: preserve
