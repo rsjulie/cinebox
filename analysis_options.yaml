@@ -14,8 +14,8 @@ analyzer:
     body_might_complete_normally_nullable: ignore
   plugins:
     - custom_lint
-  exclude:
-    - "**/*.g.dart"
+  # exclude:
+  #   - "**/*.g.dart"
 
 formatter:
   trailing_commas: preserve
