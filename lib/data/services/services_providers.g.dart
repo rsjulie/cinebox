@@ -9,24 +9,20 @@ part of 'services_providers.dart';
 @ProviderFor(googleSigninService)
 const googleSigninServiceProvider = GoogleSigninServiceProvider._();
 
-final class GoogleSigninServiceProvider
-    extends
-        $FunctionalProvider<
-          GoogleSignInService,
-          GoogleSignInService,
-          GoogleSignInService
-        >
-    with $Provider<GoogleSignInService> {
+final class GoogleSigninServiceProvider extends $FunctionalProvider<
+    GoogleSignInService,
+    GoogleSignInService,
+    GoogleSignInService> with $Provider<GoogleSignInService> {
   const GoogleSigninServiceProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'googleSigninServiceProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'googleSigninServiceProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$googleSigninServiceHash();
@@ -34,8 +30,8 @@ final class GoogleSigninServiceProvider
   @$internal
   @override
   $ProviderElement<GoogleSignInService> $createElement(
-    $ProviderPointer pointer,
-  ) => $ProviderElement(pointer);
+          $ProviderPointer pointer) =>
+      $ProviderElement(pointer);
 
   @override
   GoogleSignInService create(Ref ref) {
@@ -57,24 +53,20 @@ String _$googleSigninServiceHash() =>
 @ProviderFor(localStorageService)
 const localStorageServiceProvider = LocalStorageServiceProvider._();
 
-final class LocalStorageServiceProvider
-    extends
-        $FunctionalProvider<
-          LocalStorageService,
-          LocalStorageService,
-          LocalStorageService
-        >
-    with $Provider<LocalStorageService> {
+final class LocalStorageServiceProvider extends $FunctionalProvider<
+    LocalStorageService,
+    LocalStorageService,
+    LocalStorageService> with $Provider<LocalStorageService> {
   const LocalStorageServiceProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'localStorageServiceProvider',
-        isAutoDispose: false,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'localStorageServiceProvider',
+          isAutoDispose: false,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$localStorageServiceHash();
@@ -82,8 +74,8 @@ final class LocalStorageServiceProvider
   @$internal
   @override
   $ProviderElement<LocalStorageService> $createElement(
-    $ProviderPointer pointer,
-  ) => $ProviderElement(pointer);
+          $ProviderPointer pointer) =>
+      $ProviderElement(pointer);
 
   @override
   LocalStorageService create(Ref ref) {
@@ -109,15 +101,15 @@ final class AuthServiceProvider
     extends $FunctionalProvider<AuthService, AuthService, AuthService>
     with $Provider<AuthService> {
   const AuthServiceProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'authServiceProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'authServiceProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$authServiceHash();

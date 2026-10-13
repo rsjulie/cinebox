@@ -12,15 +12,15 @@ const tmdbRestClientProvider = TmdbRestClientProvider._();
 final class TmdbRestClientProvider extends $FunctionalProvider<Dio, Dio, Dio>
     with $Provider<Dio> {
   const TmdbRestClientProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'tmdbRestClientProvider',
-        isAutoDispose: false,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'tmdbRestClientProvider',
+          isAutoDispose: false,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$tmdbRestClientHash();

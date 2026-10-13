@@ -9,20 +9,18 @@ part of 'splash_view_model.dart';
 @ProviderFor(splashViewModel)
 const splashViewModelProvider = SplashViewModelProvider._();
 
-final class SplashViewModelProvider
-    extends
-        $FunctionalProvider<SplashViewModel, SplashViewModel, SplashViewModel>
-    with $Provider<SplashViewModel> {
+final class SplashViewModelProvider extends $FunctionalProvider<SplashViewModel,
+    SplashViewModel, SplashViewModel> with $Provider<SplashViewModel> {
   const SplashViewModelProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'splashViewModelProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'splashViewModelProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$splashViewModelHash();

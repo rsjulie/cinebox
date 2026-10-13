@@ -12,15 +12,15 @@ const backendRestClientProvider = BackendRestClientProvider._();
 final class BackendRestClientProvider extends $FunctionalProvider<Dio, Dio, Dio>
     with $Provider<Dio> {
   const BackendRestClientProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'backendRestClientProvider',
-        isAutoDispose: false,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'backendRestClientProvider',
+          isAutoDispose: false,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$backendRestClientHash();

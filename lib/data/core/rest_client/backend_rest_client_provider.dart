@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:cinebox/config/env.dart';
 import 'package:cinebox/config/result/result.dart';
 import 'package:cinebox/data/services/services_providers.dart';

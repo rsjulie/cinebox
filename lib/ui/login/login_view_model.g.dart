@@ -13,15 +13,15 @@ final class LoginViewModelProvider
     extends $FunctionalProvider<LoginViewModel, LoginViewModel, LoginViewModel>
     with $Provider<LoginViewModel> {
   const LoginViewModelProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'loginViewModelProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'loginViewModelProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$loginViewModelHash();

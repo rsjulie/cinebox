@@ -12,15 +12,15 @@ const checkUserLoggedCommandProvider = CheckUserLoggedCommandProvider._();
 final class CheckUserLoggedCommandProvider
     extends $AsyncNotifierProvider<CheckUserLoggedCommand, bool?> {
   const CheckUserLoggedCommandProvider._()
-    : super(
-        from: null,
-        argument: null,
-        retry: null,
-        name: r'checkUserLoggedCommandProvider',
-        isAutoDispose: true,
-        dependencies: null,
-        $allTransitiveDependencies: null,
-      );
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'checkUserLoggedCommandProvider',
+          isAutoDispose: true,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
 
   @override
   String debugGetCreateSourceHash() => _$checkUserLoggedCommandHash();
@@ -31,7 +31,7 @@ final class CheckUserLoggedCommandProvider
 }
 
 String _$checkUserLoggedCommandHash() =>
-    r'4f7dfceb0fac5e155bdf019b98fecff946ab3d5b';
+    r'87c922e835a25719bf301a0921154bcbfd1abb8b';
 
 abstract class _$CheckUserLoggedCommand extends $AsyncNotifier<bool?> {
   FutureOr<bool?> build();
@@ -40,14 +40,11 @@ abstract class _$CheckUserLoggedCommand extends $AsyncNotifier<bool?> {
   void runBuild() {
     final created = build();
     final ref = this.ref as $Ref<AsyncValue<bool?>, bool?>;
-    final element =
-        ref.element
-            as $ClassProviderElement<
-              AnyNotifier<AsyncValue<bool?>, bool?>,
-              AsyncValue<bool?>,
-              Object?,
-              Object?
-            >;
+    final element = ref.element as $ClassProviderElement<
+        AnyNotifier<AsyncValue<bool?>, bool?>,
+        AsyncValue<bool?>,
+        Object?,
+        Object?>;
     element.handleValue(ref, created);
   }
 }
