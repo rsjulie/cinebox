@@ -1,13 +1,16 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:cinebox/ui/core/widgets/movie_card.dart';
 import 'package:flutter/material.dart';
+
+import 'package:cinebox/ui/core/widgets/movie_card.dart';
 
 class MoviesBox extends StatelessWidget {
   final String title;
+  final bool vertical;
 
   const MoviesBox({
     super.key,
     required this.title,
+    this.vertical = false,
   });
 
   @override
@@ -25,21 +28,39 @@ class MoviesBox extends StatelessWidget {
             textAlign: TextAlign.start,
           ),
         ),
-        SizedBox(
-          width: MediaQuery.of(context).size.width,
-          height: 253,
-          child: ListView.separated(
-            itemBuilder: (context, index) {
-              return MovieCard();
-            },
-            separatorBuilder: (context, index) => SizedBox(
-              width: 14, //TODO width space
+        Visibility(
+          visible: !vertical,
+          replacement: Center(
+            child: Wrap(
+              spacing: 20,
+              runSpacing: 20,
+              runAlignment: WrapAlignment.spaceAround,
+              children: [
+                MovieCard(),
+                MovieCard(),
+                MovieCard(),
+                MovieCard(),
+                MovieCard(),
+                MovieCard(),
+              ],
             ),
-            scrollDirection: Axis.horizontal,
-            itemCount: 10,
-            physics: BouncingScrollPhysics(),
-            padding: EdgeInsets.only(
-              left: 20,
+          ),
+          child: SizedBox(
+            width: MediaQuery.of(context).size.width,
+            height: 253,
+            child: ListView.separated(
+              itemBuilder: (context, index) {
+                return MovieCard();
+              },
+              separatorBuilder: (context, index) => SizedBox(
+                width: 14, //TODO width space
+              ),
+              scrollDirection: Axis.horizontal,
+              itemCount: 10,
+              physics: BouncingScrollPhysics(),
+              padding: EdgeInsets.only(
+                left: 20,
+              ),
             ),
           ),
         ),
