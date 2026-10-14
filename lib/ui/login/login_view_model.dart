@@ -10,10 +10,12 @@ class LoginViewModel {
     required LoginWithGoogleCommand loginWithGoogleCommand,
   }) : _loginWithGoogleCommand = loginWithGoogleCommand;
 
-  void googleLogin() => _loginWithGoogleCommand.execute();
+  void googleLogin() {
+    _loginWithGoogleCommand.execute();
+  }
 }
 
 @riverpod
 LoginViewModel loginViewModel(Ref ref) {
-  return LoginViewModel(loginWithGoogleCommand: ref.watch(loginWithGoogleCommandProvider.notifier));
+  return LoginViewModel(loginWithGoogleCommand: ref.read(loginWithGoogleCommandProvider.notifier));
 }

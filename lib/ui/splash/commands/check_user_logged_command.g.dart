@@ -31,7 +31,7 @@ final class CheckUserLoggedCommandProvider
 }
 
 String _$checkUserLoggedCommandHash() =>
-    r'87c922e835a25719bf301a0921154bcbfd1abb8b';
+    r'cb27134de19ef8d27f68d4b21ec2d31cf9d68b2d';
 
 abstract class _$CheckUserLoggedCommand extends $AsyncNotifier<bool?> {
   FutureOr<bool?> build();

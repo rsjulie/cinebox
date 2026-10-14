@@ -45,7 +45,7 @@ final class LoginViewModelProvider
   }
 }
 
-String _$loginViewModelHash() => r'8ddc9c8467e475804aca31657bf2001c60ae913e';
+String _$loginViewModelHash() => r'8de5261c532cb239dc4dc5c6c74b8917915c35d6';
 
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

@@ -13,6 +13,7 @@ class CheckUserLoggedCommand extends _$CheckUserLoggedCommand {
     state = const AsyncLoading();
     final authRepository = ref.read(authRepositoryProvider);
     final isLoggedResult = await authRepository.isLogged();
+    if (!ref.mounted) return;
 
     state = switch (isLoggedResult) {
       Success(value: final isLogged) => AsyncData(isLogged),
